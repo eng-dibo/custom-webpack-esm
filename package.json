@@ -2,8 +2,9 @@
   "name": "example",
   "version": "0.0.0",
   "scripts": {
+    "start": "TS_NODE_PROJECT=tsconfig.app.json NODE_OPTIONS='--experimental-modules --experimental-specifier-resolution=node --loader ts-node/esm' ng build --aot",
     "ng": "ng",
-    "start": "ng serve",
+    "serve": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
@@ -38,6 +39,7 @@
     "karma-coverage": "~2.1.0",
     "karma-jasmine": "~4.0.0",
     "karma-jasmine-html-reporter": "~1.7.0",
+    "ts-node": "^10.4.0",
     "typescript": "~4.5.2"
   }
 }
