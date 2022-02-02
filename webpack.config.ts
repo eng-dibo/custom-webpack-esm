@@ -1,2 +1,2 @@
-import baseConfig from './webpack.base';
+import baseConfig from '#webpack.base';
 export default baseConfig;
